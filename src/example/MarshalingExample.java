@@ -12,6 +12,11 @@ public class MarshalingExample {
 		// 1 { } 자르기.
 		int end = temp.length();
 		String cutTemp = temp.substring(1, end - 1);
+		/*
+		// 1-2 과장님방법 
+		int start_position = temp.indexOf("{"); int last_position =
+		temp.indexOf("}"); temp = temp.substring(start_position+1,last_position);
+		*/
 		
 		// 2 ,기준으로 자르기
 		String[] cutTemp2 = cutTemp.split(",");
