@@ -28,7 +28,7 @@ public class MarshalingExample {
 			String key = iter.next();
 			String value = map.get(key);
 			System.out.println("들어온 값은 " + key + "||" + value + "입니다");
-
+			System.out.println("test");
 		}
 	}
 
