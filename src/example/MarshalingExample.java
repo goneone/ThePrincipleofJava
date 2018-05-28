@@ -12,7 +12,7 @@ public class MarshalingExample {
 		// 1 { } 자르기.
 		int end = temp.length();
 		String cutTemp = temp.substring(1, end - 1);
-
+		
 		// 2 ,기준으로 자르기
 		String[] cutTemp2 = cutTemp.split(",");
 
@@ -29,6 +29,7 @@ public class MarshalingExample {
 			String value = map.get(key);
 			System.out.println("들어온 값은 " + key + "||" + value + "입니다");
 			System.out.println("test");
+			System.out.println("test2");
 		}
 	}
 
