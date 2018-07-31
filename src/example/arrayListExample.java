@@ -7,10 +7,11 @@ import java.util.List;
 public class arrayListExample {
  public static void main(String[] args) {
 	
-	 String data = "07,08,09,10";
+	 String data = "07,08,09,10,5,";
 	 String[] items = data.split(",");
 	 ArrayList<String> spMonthList = new ArrayList<String>(Arrays.asList(items));
 	 System.out.println(spMonthList);
-	 System.out.println(spMonthList.get(0));
+	 System.out.println(spMonthList.size());
+	 //System.out.println(spMonthList.get(0));
 }
 }
