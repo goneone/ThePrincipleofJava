@@ -19,12 +19,16 @@ public class arrayListExample2 {
 		life.add("저글링");
 		life.add("히드라");
 		
+		System.out.println("*************건물 이름");
+		for (int i = 0; i < building.size(); i++) {
+			System.out.println(building.get(i));
+		}
+		System.out.println("                       ");
 		
-		System.out.println(building.get(1));
 		System.out.println(zerg.get(1));
 		System.out.println(zerg);
 		System.out.println(zerg.size());
 		System.out.println(building.size());
-		// System.out.println(spMonthList.get(0));
+		
 	}
 }
