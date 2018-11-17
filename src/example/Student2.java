@@ -16,10 +16,10 @@ public class Student2 implements Cloneable {
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
-	
+//없애줄건데?
 	//주석 추가 test용
 	//주석 추가 test용3
 	//주석 추가 test용4
-	//주석 추가 test용54353456347
+	//주석 추가 test용54353456347 더추가할건데?
 	//주석 추가 test용3
 }
