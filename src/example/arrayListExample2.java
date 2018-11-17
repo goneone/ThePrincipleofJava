@@ -25,8 +25,8 @@ public class arrayListExample2 {
 		}
 		System.out.println("                       ");
 		
-		System.out.println(zerg.get(1));
-		System.out.println(zerg);
+		System.out.println(zerg.get(1)); //생명체
+		System.out.println(zerg); //빌딩이랑 생명체 
 		System.out.println(zerg.size());
 		System.out.println(building.size());
 		
