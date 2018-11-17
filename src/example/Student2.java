@@ -15,7 +15,7 @@ public class Student2 implements Cloneable {
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
 		return super.clone();
-		
-		//me too commit
 	}
+	
+	//주석 추가 test용 
 }
