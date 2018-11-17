@@ -17,5 +17,5 @@ public class Student2 implements Cloneable {
 		return super.clone();
 	}
 	
-	//주석 추가 test용 
+	//주석 추가 test용  
 }
