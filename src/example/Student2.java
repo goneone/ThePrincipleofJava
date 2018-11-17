@@ -20,6 +20,6 @@ public class Student2 implements Cloneable {
 	//주석 추가 test용
 	//주석 추가 test용3
 	//주석 추가 test용4
-	//주석 추가 test용
+	//주석 추가 test용54353456347
 	//주석 추가 test용3
 }
