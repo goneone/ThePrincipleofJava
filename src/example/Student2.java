@@ -16,7 +16,7 @@ public class Student2 implements Cloneable {
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
-	
+	//hh
 	//주석 추가 test용
 	//주석 추가 test용3
 }
