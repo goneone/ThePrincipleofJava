@@ -1,8 +1,8 @@
-package javaUtil;
+package Thread;
 
 public class MusicBoxExam1 {
 	public static void main(String[] args) {
-
+		//뮤직박스 실행하는 메인 메소드.
 		MusicBox box = new MusicBox();
 
 		MusicPlayer kang = new MusicPlayer(1, box);

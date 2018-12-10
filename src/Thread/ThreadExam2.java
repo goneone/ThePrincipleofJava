@@ -1,4 +1,4 @@
-package javaUtil;
+package Thread;
 
 public class ThreadExam2 {
 	public static void main(String[] args) {

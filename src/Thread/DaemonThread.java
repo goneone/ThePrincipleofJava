@@ -1,7 +1,7 @@
-package javaUtil;
+package Thread;
 
 public class DaemonThread implements Runnable {
-
+	//데몬쓰레드는 일반 쓰레드(main 등)가 모두 종료되면 강제적으로 종료되는 특징을 가지고 있다.
 	@Override
 	public void run() {
 		while (true) {
@@ -20,6 +20,7 @@ public class DaemonThread implements Runnable {
 	public static void main(String[] args) {
 		Thread thread = new Thread(new DaemonThread());
 		thread.setDaemon(true); // 데몬쓰레드로 설정.
+		//위에꺼 주석치면 데몬쓰레드가 아니니까 메인쓰레드가 종료되도 무한루프로 쓰레드가 계속 돔
 		thread.start();
 
 		try {

@@ -1,9 +1,11 @@
-package javaUtil;
+package Thread;
 
 public class MusicPlayer extends Thread {
+	// 뮤직플레이어가 각 쓰레드다.
 	int type;
 	MusicBox musicbox;
 
+	// 생성자
 	public MusicPlayer(int type, MusicBox musicBox) {
 		this.type = type;
 		this.musicbox = musicBox;
@@ -17,10 +19,10 @@ public class MusicPlayer extends Thread {
 			break;
 		case 2:
 			musicbox.playMusicB();
-			break;
 		case 3:
 			musicbox.playMusicC();
 			break;
 		}
 	}
+
 }

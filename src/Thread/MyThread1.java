@@ -1,4 +1,4 @@
-package javaUtil;
+package Thread;
 
 public class MyThread1 extends Thread {
 	// 쓰레드 생성 방법 중 쓰레드 클래스를 상속받는 방법
