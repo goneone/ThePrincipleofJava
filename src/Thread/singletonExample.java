@@ -1,4 +1,4 @@
-package example;
+package Thread;
 
 class Singleton {
 	private static Singleton single = new Singleton();

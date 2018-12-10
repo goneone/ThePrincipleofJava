@@ -1,4 +1,4 @@
-package example;
+package Thread;
 
 //╫л╠шеФ ев╫╨ф╝юс.
 public class printerTest {

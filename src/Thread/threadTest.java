@@ -1,4 +1,4 @@
-package example;
+package Thread;
 
 public class threadTest implements Runnable{
 	int seq;

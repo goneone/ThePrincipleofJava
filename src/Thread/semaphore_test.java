@@ -1,10 +1,10 @@
-package example;
+package Thread;
 
 import java.util.concurrent.Semaphore;
 
 public class semaphore_test {
 	public static void main(String[] args) {
-		Semaphore se = new Semaphore(2);
+		Semaphore se = new Semaphore(3); //동시에 실행될 세마포어의 갯수
 		SyncMulti th1 = new SyncMulti(se, "1");
 		SyncMulti th2 = new SyncMulti(se, "2");
 		SyncMulti th3 = new SyncMulti(se, "3");
