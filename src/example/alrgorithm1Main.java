@@ -23,7 +23,7 @@ public class alrgorithm1Main {
 
 			// 자바에서 스트링의 자릿수를 확인해서 4자리가 푸시라면 . 푸시메소드 실행해서 input 값 중 6번째값(숫자)를 입력값으로 받으면 됩니다.
 			String pushValue = input.substring(0, 4);
-			if (pushValue.equals("push")) {
+			if (pushValue.equals("push")) { 
 				int pushX = (Integer.parseInt(input.substring(5, 6))); // 이걸 못해서 개헤맴...꼭기억하자 5번째에서 6번째 전까지를 뽑겠다..
 				queue.push(pushX);
 			} else if (input.equals("pop")) {
