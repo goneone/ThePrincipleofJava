@@ -22,7 +22,7 @@ public class uncompletePlayer2 {
 
 		// keySet은 키값 다 리턴함.
 		for (String key : hash.keySet()) {
-     
+
 			if (hash.get(key) != 0) {
 				answer = key;
 			}
