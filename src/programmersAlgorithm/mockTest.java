@@ -1,43 +1,58 @@
 package programmersAlgorithm;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class mockTest {
 	public static int[] solution(int[] answers) {
 		// 정답쓰
 		int[] answer = {};
+		int[] pattern1 = { 1, 2, 3, 4, 5 };
+		int[] pattern2 = { 2, 1, 2, 3, 2, 4, 2, 5 };
+		int[] pattern3 = { 3, 3, 1, 1, 2, 2, 4, 4, 5, 5 };
 
-		// 1번새끼 답안 넣는 배열과 1번새끼 카운트 세는 함수.
-		int[] answer1 = {}; //<--이새끼를 arrayList로..해야할듯?
-		int count1 = 0;
-
-		// 1번새끼
+		// 1번,2번,3번 수포자가 맞춘 문제 갯수
+		int[] count = new int[3];
 		for (int i = 0; i < answers.length; i++) {
-			if (i % 5 == 0) {
-				answer1[i] = 1;
-			} else if (i % 5 == 1) {
-				answer1[i] = 2;
-			} else if (i % 5 == 2) {
-				answer1[i] = 3;
-			} else if (i % 5 == 3) {
-				answer1[i] = 4;
-			} else if (i % 5 == 4) {
-				answer1[i] = 5;
+			if (pattern1[i % 5] == answers[i]) {
+				count[0]++;
+			} else if (pattern2[i % 8] == answers[i]) {
+				count[1]++;
+			} else if (pattern3[i % 10] == answers[i]) {
+				count[2]++;
 			}
 		}
 
-		// 정답과 1번새끼 답안 비교
-		for (int j = 0; j < answers.length; j++) {
-			if (answer1[j] == answers[j]) {
-				count1++;
+		// max값 뽑기.
+		int max = Math.max(count[0], Math.max(count[1], count[2]));
+		System.out.println(max);
+		ArrayList<Integer> temp = new ArrayList<>();
+
+		for (int i = 0; i < count.length; i++) {
+			if (count[i] == max) {
+				temp.add(i + 1);
 			}
 		}
-		System.out.println(count1);
-		// 2번새끼
-		// 3번새끼
+		
+		/*for (int i = 0; i < count.length; i++) {
+			System.out.println(temp.get(i));
+			System.out.println("(&(*&*(&*(&*&*(&*(");
+		}
+		*/
+		answer = new int[temp.size()];
+		
+		
+		//보류
+		
+		for (int j = 0; j < answer.length; j++) {
+			answer[j] = temp.get(j);
+			System.out.println(answer[j]);
+		}
 		return answer;
 	}
 
 	public static void main(String[] args) {
-		int[] Test1 = {1,2,3,4,5};
-		mockTest.solution(Test1);
+		int[] Test1 = {1, 3, 2, 4, 2 };
+		System.out.println(mockTest.solution(Test1));
 	}
 }
